@@ -39,7 +39,8 @@ def main():
 
     get = False
     while (get != True):
-        take = input("Select : ")
+        select = input("Select : ")
+        take = select.lower()
         if take == "d":
             Rishaw.display_book()
 
@@ -58,7 +59,7 @@ def main():
                 print("Invalid value")
 
 
-        elif take == "quit":
+        elif take == "quit" or "q":
             get = True
             
         elif take == "a":
